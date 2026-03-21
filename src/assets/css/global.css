@@ -1,0 +1,218 @@
+/* ===============================
+   Fonts
+   =============================== */
+
+   @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-Black.woff2') format('woff2'),
+      url('../fonts/Catamaran-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-Bold.woff2') format('woff2'),
+      url('../fonts/Catamaran-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Catamaran-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-ExtraLight.woff2') format('woff2'),
+      url('../fonts/Catamaran-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-Light.woff2') format('woff2'),
+      url('../fonts/Catamaran-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-Medium.woff2') format('woff2'),
+      url('../fonts/Catamaran-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-Regular.woff2') format('woff2'),
+      url('../fonts/Catamaran-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-SemiBold.woff2') format('woff2'),
+      url('../fonts/Catamaran-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Catamaran';
+    src: url('../fonts/Catamaran-Thin.woff2') format('woff2'),
+      url('../fonts/Catamaran-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+/* ===============================
+   Reset
+   =============================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #212529;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ===============================
+   Helpers
+   =============================== */
+
+/* Display */
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Flex Box */
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Alignment */
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Text colors */
+.text-secondary { color: #6c757d !important; }
+.text-success { color: #198754 !important; }
+.text-danger { color: #dc3545 !important; }
+.text-warning { color: #ffc107 !important; }
+.text-light { color: #f8f9fa !important; }
+.text-muted { color: #6c757d !important; }
+.text-white { color: #ffffff !important; }
+
+/* Font weight */
+.fw-normal { font-weight: normal !important; }
+.fw-bold { font-weight: bold !important; }
+
+/* Width */
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
