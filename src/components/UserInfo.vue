@@ -48,10 +48,6 @@ const nameClass = computed(() => {
   line-height: 1;
 }
 
-.user-info.w-100 {
-  width: 100%;
-}
-
 .name {
   font-weight: bold;
 }
