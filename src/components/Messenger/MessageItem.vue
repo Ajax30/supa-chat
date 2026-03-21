@@ -41,6 +41,10 @@ defineProps({
 }
 
 .user-info {
+  padding-bottom: 5px;
+}
+
+.user-info {
   padding-left: 10px;
   line-height: 1;
 }

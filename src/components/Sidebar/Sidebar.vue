@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar">
+  <div class="sidebar" :class="{ open: isOpen }">
     <MyProfile
       name="Carmen Smith"
       :avatar="carmenImg"
@@ -17,6 +17,15 @@ import Actions from "@/components/Sidebar/Actions.vue";
 import SearchBox from "@/components/Sidebar/SearchBox.vue";
 import UsersList from "@/components/Sidebar/UsersList.vue";
 import carmenImg from "@/assets/images/carmen.jpg";
+import { ref } from "vue";
+
+const isOpen = ref(false);
+
+function toggleSidebar() {
+  isOpen.value = !isOpen.value;
+}
+
+defineExpose({ toggleSidebar });
 </script>
 
 <style scoped>
@@ -24,10 +33,6 @@ import carmenImg from "@/assets/images/carmen.jpg";
   width: 320px;
   background: #261c46;
   overflow: auto;
-}
-
-.sidebar-toggler {
-  display: none;
 }
 
 @media (max-width: 767px) {
@@ -43,10 +48,6 @@ import carmenImg from "@/assets/images/carmen.jpg";
 
   .sidebar.open {
     transform: translateX(0);
-  }
-
-  .sidebar-toggler {
-    display: block;
   }
 }
 </style>
