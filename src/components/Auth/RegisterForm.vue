@@ -131,13 +131,13 @@ function handleFile(e) {
 
 // Yup validation schema
 const schema = yup.object({
-  firstName: yup.string().required("First name required"),
-  lastName: yup.string().required("Last name required"),
-  email: yup.string().email("Invalid email").required("Email required"),
-  password: yup.string().min(6, "Password must be at least 6 characters").required(),
+  firstName: yup.string().required("First name is required"),
+  lastName: yup.string().required("Last name is required"),
+  email: yup.string().email("Invalid email").required("Email is required"),
+  password: yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
   passwordRepeat: yup.string()
     .oneOf([yup.ref("password")], "Passwords must match")
-    .required("Repeat password required")
+    .required("Repeat password is required")
 })
 
 // Validate single field live
@@ -186,7 +186,7 @@ async function submit() {
 
 .error {
   color: #dc3545;
-  font-size: 0.85rem;
+  font-size: 12px;
   position: absolute;
   bottom: 0;
   right: 0;
