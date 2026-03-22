@@ -68,6 +68,7 @@ defineProps({
   position: relative;
   padding-left: 0;
   color: #6c757d;
+  font-size: 14px;
 }
 
 .file-upload-btn:focus {
