@@ -14,6 +14,7 @@
       <input
         class="d-block w-100"
         type="password"
+        placeholder="Your password here"
         v-model="password"
         required
       />
