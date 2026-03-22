@@ -168,8 +168,12 @@ async function validateForm() {
 
 // Submit
 async function submit() {
+  // Mark all fields as touched to show errors
+  Object.keys(touched).forEach(field => touched[field] = true)
+
   const valid = await validateForm()
   if (!valid) return
+
   console.log("Form submitted:", { ...form, photo: photo.value })
 }
 </script>
