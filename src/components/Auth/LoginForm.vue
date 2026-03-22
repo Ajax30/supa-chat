@@ -1,6 +1,7 @@
 <template>
   <FormCard title="Login">
     <form @submit.prevent="submit">
+    <div class="form-field">
       <label class="d-block">Email</label>
       <input
         class="d-block w-100"
@@ -9,15 +10,18 @@
         v-model="email"
         required
       />
+      </div>
 
-      <label class="d-block">Password</label>
-      <input
-        class="d-block w-100"
-        type="password"
-        placeholder="Your password here"
-        v-model="password"
-        required
-      />
+      <div class="form-field">
+        <label class="d-block">Password</label>
+        <input
+          class="d-block w-100"
+          type="password"
+          placeholder="Your password here"
+          v-model="password"
+          required
+        />
+      </div>
 
       <button type="submit" class="w-100">Login</button>
     </form>

@@ -41,10 +41,10 @@
       </div>
 
       <!-- Photo (optional) -->
-      <div class="form-field">
+      <div class="form-field bordered">
         <label class="d-block">Photo</label>
         <input
-          class="d-block w-100"
+          class="d-block file-upload-btn"
           type="file"
           accept="image/*"
           @change="handleFile"
@@ -115,7 +115,7 @@ const errors = reactive({
   passwordRepeat: null
 })
 
-// Photo optional
+// Photo (optional)
 const photo = ref(null)
 const photoError = ref("")
 function handleFile(e) {
@@ -179,11 +179,6 @@ async function submit() {
 </script>
 
 <style scoped>
-.form-field {
-  position: relative;
-  margin-bottom: 0;
-}
-
 .error {
   color: #dc3545;
   font-size: 12px;
