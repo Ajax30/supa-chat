@@ -40,7 +40,13 @@ ul {
 
 .link {
   display: inline-block;
+  color: #6c757d;
+  font-weight: 600;
   margin-right: 5px;
   padding: 5px;
+}
+
+.link.router-link-active {
+ color: #372379;
 }
 </style>

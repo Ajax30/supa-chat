@@ -33,7 +33,7 @@ defineProps({
 .form-card .form-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3b3e41;
+  color: #372379;
   line-height: 1;
   margin-bottom: 10px;
 }
@@ -46,7 +46,7 @@ defineProps({
 
 .form-card input[type="text"],
 .form-card input[type="email"],
-.form-card input[type="password"]   {
+.form-card input[type="password"] {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 6px 3px 6px;
   color: #8b8da9;
