@@ -1,6 +1,6 @@
 <template>
   <ul class="users-list">
-    <li v-for="user in users" :key="user.name">
+    <li v-for="user in users" :key="user.id">
       <SidebarUser
         :avatar="user.avatar"
         :name="user.name"
@@ -16,24 +16,28 @@ import SidebarUser from "@/components/Sidebar/User.vue";
 
 const users = [
   {
+    id: 1,
     name: "Dean Clover",
     avatar: "/src/assets/images/dean.jpg",
     latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
     status: "online",
   },
   {
+    id: 2,
     name: "Carmen Smith",
     avatar: "/src/assets/images/carmen.jpg",
     latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
     status: "online",
   },
   {
+    id: 3,
     name: "Jane Fountain",
     avatar: "/src/assets/images/jane.jpg",
     latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
     status: "online",
   },
   {
+    id: 4,
     name: "John Smith",
     avatar: "/src/assets/images/john.jpg",
     latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",

@@ -54,8 +54,6 @@ const messages = [
 <style scoped>
   .messenger-content {
     flex: 1;
-    display: flex;
-    flex-direction: column;
     min-width: 0;
     padding-top: 20px;
     padding-bottom: 20px;

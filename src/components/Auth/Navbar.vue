@@ -3,7 +3,7 @@
     <router-link to="/" class="brand">
       <img src="/logo.png" alt="SupaChat Logo" class="navbar-logo" />
     </router-link>
-    <ul>
+    <ul class="d-flex">
       <li><router-link class="link" to="/register">Register</router-link></li>
       <li><router-link class="link" to="/login">Login</router-link></li>
     </ul>
@@ -34,7 +34,6 @@
 }
 
 ul {
-  display: flex;
   margin-left: auto;
 }
 

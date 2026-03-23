@@ -1,5 +1,5 @@
 <template>
-  <div class="user-info" :class="{'w-100': isMyProfile}">
+  <div class="user-info d-flex flex-column" :class="{'w-100': isMyProfile}">
     <!-- Name -->
     <p :class="nameClass">{{ name }}</p>
 
@@ -42,8 +42,6 @@ const nameClass = computed(() => {
 
 <style scoped>
 .user-info {
-  display: flex;
-  flex-direction: column;
   padding-left: 10px;
   line-height: 1;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="actions d-flex">
+  <div class="actions d-flex align-items-center">
     <button class="icon" title="Add attachment">
       <i class="fa-solid fa-paperclip"></i>
     </button>
@@ -29,7 +29,6 @@ function handleSend() {
 <style scoped>
 .actions {
   margin-left: 15px;
-  display: flex;
 }
 
 .actions button {

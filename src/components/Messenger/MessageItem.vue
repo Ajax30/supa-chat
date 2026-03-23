@@ -31,7 +31,6 @@ defineProps({
 .message {
   margin-bottom: 30px;
   width: 100%;
-  max-width: 100%;
   word-break: break-word;
 }
 

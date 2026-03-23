@@ -5,7 +5,7 @@
       <UserInfo :name="user.name" :status="user.status" :isHeader="true" />
     </div>
 
-    <div class="actions ms-auto">
+    <div class="actions d-flex align-items-center ms-auto">
       <span title="Invite" class="action text-secondary">
         <i class="fa-solid fa-user-plus"></i>
       </span>
@@ -43,15 +43,12 @@ const user = {
 
 <style scoped>
 .messenger-header {
-  height: 90px;
-  display: flex;
-  align-items: center;
+  height: 90px; 
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
 .actions {
   margin-left: auto;
-  display: flex;
   padding-left: 15px;
 }
 

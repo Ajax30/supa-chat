@@ -22,7 +22,6 @@
 .my-actions {
   padding: 0 25px;
   justify-content: space-around;
-  display: flex;
 }
 
 .my-actions button {

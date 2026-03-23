@@ -22,8 +22,6 @@ function handleSend(msg) {
 .messenger-footer {
   height: 75px;
   box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.07);
-  display: flex;
-  align-items: center;
   width: 100%;
 }
 
@@ -32,21 +30,5 @@ input[type="text"] {
   padding: 5px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-}
-
-.actions {
-  margin-left: 15px;
-  display: flex;
-}
-
-.actions button {
-  padding: 5px;
-  color: #6c757d;
-}
-
-button.submit {
-  font-size: 150%;
-  color: #331c7c;
-  padding-right: 0;
 }
 </style>
