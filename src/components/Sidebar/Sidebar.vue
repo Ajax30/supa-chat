@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar" :class="{ open: isOpen }">
+  <PerfectScrollbar class="sidebar" :options="{ suppressScrollX: true }">
     <MyProfile
       name="Carmen Smith"
       :avatar="carmenImg"
@@ -7,8 +7,8 @@
     />
     <Actions />
     <SearchBox />
-    <UsersList />
-  </div>
+    <UsersList /> 
+  </PerfectScrollbar>
 </template>
 
 <script setup>

@@ -15,35 +15,13 @@
 import SidebarUser from "@/components/Sidebar/User.vue";
 
 const users = [
-  {
-    id: 1,
-    name: "Dean Clover",
-    avatar: "/src/assets/images/dean.jpg",
-    latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
-    status: "online",
-  },
-  {
-    id: 2,
-    name: "Carmen Smith",
-    avatar: "/src/assets/images/carmen.jpg",
-    latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
-    status: "online",
-  },
-  {
-    id: 3,
-    name: "Jane Fountain",
-    avatar: "/src/assets/images/jane.jpg",
-    latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
-    status: "online",
-  },
-  {
-    id: 4,
-    name: "John Smith",
-    avatar: "/src/assets/images/john.jpg",
-    latestMessage: "Lorem ipsum dolor sit amet consectetur [...]",
-    status: "online",
-  },
+  { id: 1, name: "Dean Clover", avatar: "/src/assets/images/dean.jpg", latestMessage: "Lorem ipsum dolor sit amet [...]", status: "online" },
+  { id: 2, name: "Carmen Smith", avatar: "/src/assets/images/carmen.jpg", latestMessage: "Lorem ipsum dolor sit amet [...]", status: "online" },
+  { id: 3, name: "Jane Fountain", avatar: "/src/assets/images/jane.jpg", latestMessage: "Lorem ipsum dolor sit amet [...]", status: "online" },
+  { id: 4, name: "John Smith", avatar: "/src/assets/images/john.jpg", latestMessage: "Lorem ipsum dolor sit amet [...]", status: "online" },
+  { id: 5, name: "Tom Kane", avatar: "/src/assets/images/default-avatar.png", latestMessage: "Lorem ipsum dolor sit amet [...]", status: "online" },
 ];
+
 </script>
 
 <style scoped>
